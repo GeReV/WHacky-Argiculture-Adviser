@@ -1,0 +1,9 @@
+An application created in about 24 hours for WaterHackathon Tel Aviv 2011 for giving worldwide farmers, mostly in developing countries, access to public information such as weather forecasts, and get recommendations for irrigation schedules.
+
+This project is release into the public domain.
+
+The project is divided into 3 parts:
+
+1. Website, based on ASP.net MVC 3 which collects weather data based on geolocation and outputs suggestions and forecasts.
+2. Android application, used to pass information to the website.
+3. Experimental Matlab code used to combine infrared and visible light images into a single image with which a plant's health can be analyzed.
