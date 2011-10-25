@@ -1,0 +1,531 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    background-color: #1b676b;
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #1b676b;
+}
+
+a:link {
+    color: #1b676b;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #1b676b;
+}
+
+a:hover {
+    color: #bef202;
+    text-decoration: none;
+}
+
+a:active {
+    color: #bef202;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #519548;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page 
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header 
+{
+    background: #bef202;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px .5em;
+    margin: 0;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 2px 2px 6px #88c425;
+}
+
+#main 
+{
+    background: #eafde6;
+    padding: 30px;
+}
+
+footer, 
+#footer {
+    background-color: #88c425;
+    color: #eafde6;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+footer a:link,
+footer a:visited
+{
+    color: #eafde6;
+}
+footer a:hover 
+{
+    color: #bef202;
+}
+footer a:active 
+{
+    color: #1b676b;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li {
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active {
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #e8eef4;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+.date,
+.recommendation 
+{
+    display: block;
+}
+
+.recommendation 
+{
+    /* Based on http://twitter.github.com/bootstrap/ */
+    position: relative;
+    padding: 3px;
+    margin-bottom: 5px;
+    color: #404040;
+    background-color: #eedc94;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#fceec1), to(#eedc94));
+    background-image: -moz-linear-gradient(top, #fceec1, #eedc94);
+    background-image: -ms-linear-gradient(top, #fceec1, #eedc94);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceec1), color-stop(100%, #eedc94));
+    background-image: -webkit-linear-gradient(top, #fceec1, #eedc94);
+    background-image: -o-linear-gradient(top, #fceec1, #eedc94);
+    background-image: linear-gradient(top, #fceec1, #eedc94);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fceec1', endColorstr='#eedc94', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #eedc94 #eedc94 #e4c652;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    /*text-indent: -999em;*/
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+}
+.rec-low 
+{
+    background: #f35e57;
+}
+.rec-medium 
+{
+    background: #eedc94;
+}
+.rec-high 
+{
+    background: #57a957;   
+}
+.recommendation span 
+{
+  
+    background-image: url('images/tap.png');
+    background-repeat: none;
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    text-indent: -999em;
+}
+.rec-low span
+{
+    background-position: 0 0;
+}
+.rec-medium span 
+{
+    background-position: 0 -32px;
+}
+.rec-high span 
+{
+    background-position: 0 -64px;
+}
+
+#map img 
+{
+    width: 100%;
+}
+
+#today 
+{
+    background: #bef202;
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+#forecast 
+{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+#forecast .forecast-item 
+{
+    background: #bef202;
+    float: left;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 70px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+#forecast .forecast-item span,
+#forecast .forecast-item img 
+{
+    display: block;
+}
+#forecast .forecast-item span 
+{
+    text-align: left;
+}
+#forecast .forecast-item .day 
+{
+    font-size: 14pt;
+}
+#forecast .forecast-item .high
+{
+    font-size: 16pt;
+}
+#forecast .forecast-item .low
+{
+    font-size: 13pt;
+}
+
+@media only screen and (min-width: 1024px) 
+{
+    .page 
+    {
+        width: 660px;
+    }
+}
+
+@media only handheld and (orientation:portrait)  
+{
+    body 
+    {
+        font-size: 70%;
+    }
+    .page 
+    {
+        width: 400px !important;
+    }
+    #map img 
+    {
+        width: 360px !important;
+    }
+    #forecast .forecast-item 
+    {
+        width: 84px;
+    }
+}
+
+@media only handheld and (orientation:landscape)  
+{
+    body 
+    {
+        font-size: 80%;
+    }
+    .page 
+    {
+        width: 740px;
+    }
+    #main 
+    {
+        overflow: hidden;
+    }
+    #map 
+    {
+        float: left;
+        width: 40%;
+    }
+    #today
+    {
+        float: right;
+        overflow: hidden;
+        width: 40%;
+    }
+    #forecast 
+    {
+        clear: both;
+    }
+}

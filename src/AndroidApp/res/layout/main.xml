@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+<!-- <TableLayout -->
+<!--    android:id="@+id/tableLayout1" -->
+<!--    android:layout_width="fill_parent" -->
+<!--    android:layout_height="65dp"  -->
+<!--    android:stretchColumns="*"> -->
+
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+ 
+<!--     android:stretchColumns="*" -->
+    
+<TableRow android:id="@+id/tableRow1" 
+android:layout_width="wrap_content" 
+android:layout_height="15dp">
+    <Button
+        android:id="@+id/ButtonCheckField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Irrigation Schedule" />
+
+    <Button
+        android:id="@+id/ButtonIRScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plant analysis" />
+</TableRow></TableLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="252dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.82"
+        android:src="@drawable/tree_1" />
+
+    <!-- <Button -->
+    <!-- android:id="@+id/button1" -->
+    <!-- android:layout_width="124dp" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="Button" /> -->
+
+</LinearLayout>
