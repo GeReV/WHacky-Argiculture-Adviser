@@ -1,0 +1,20 @@
+﻿@model Weather.ForecastItem
+           
+@{
+    float recommendation = Weather.DecisionMaker.GetRecommendation(ViewBag.WeatherData, Model.Index);
+}
+<li class="forecast-item">
+    <span class="date">@Html.Encode(ViewBag.WeatherData.ForecastInformation.ForecastDateTime.AddDays(Model.Index).ToString("dd/MM/yyyy"))</span>
+    @if (recommendation < 0.3f) {
+        <span class="recommendation rec-low"><span>Don't Irrigate</span></span>
+    }
+    else if (recommendation < 0.75f) {
+        <span class="recommendation rec-medium"><span>Conserve Water</span></span>
+    }
+    else {
+        <span class="recommendation rec-high"><span>Irrigate</span></span>
+    }
+    @Html.Image(string.Concat("//www.google.com/", (string)Model.Forecast.Icon), (string)Model.Forecast.Condition)
+    <span class="high">@Html.Encode((int)Model.Forecast.High.Celsius)&deg;C</span>
+    <span class="low">@Html.Encode((int)Model.Forecast.Low.Celsius)&deg;C</span>
+</li>

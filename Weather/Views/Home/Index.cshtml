@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    
+    float recommendation = Weather.DecisionMaker.GetRecommendation(ViewBag.WeatherData, 0);
+}
+
+<div id="map">
+    @Html.Image((string)ViewBag.MapImageUrl)
+</div>
+<div id="today">
+    <span class="date">@Html.Encode(DateTime.Today.ToString("dd/MM/yyyy"))</span>
+    @if (recommendation < 0.3f) {
+        <span class="recommendation rec-low"><span>Don't Irrigate</span></span>
+    }
+    else if (recommendation < 0.75f) {
+        <span class="recommendation rec-medium"><span>Conserve Water</span></span>
+    }
+    else {
+        <span class="recommendation rec-high"><span>Irrigate</span></span>
+    }
+</div>
+<ul id="forecast">
+    @for (int i = 0; i < ViewBag.WeatherData.ForecastConditions.Count; i++) {
+        var item = ViewBag.WeatherData.ForecastConditions[i];
+        Html.RenderPartial("_ForecastItem", new Weather.ForecastItem { Forecast = item, Index = i });
+    }
+</ul>
